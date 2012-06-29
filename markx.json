@@ -1,0 +1,27 @@
+{
+  "input": "views/index.jade",
+  "masher": {
+    "assetPath": "",
+    "outputPath": "public/_compressed",
+    "groups": {
+      "common": {
+        "styles": [
+          "public/common.styl"
+        ]
+      },
+      "homepage": {
+        "styles": [
+          "public/homepage.styl"
+        ]
+      }
+    },
+    "plugins": {
+      "pre": [
+        "stylus"
+      ],
+      "post": [
+        "hash"
+      ]
+    }
+  }
+}

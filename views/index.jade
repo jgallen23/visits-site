@@ -1,0 +1,24 @@
+extends ../layouts/primary
+
+block head
+  != masher.style("homepage")
+
+block body
+  section.header
+    div.frame
+      a(href="http://itunes.apple.com/us/app/visits/id462227149?mt=12").logo Visits
+      img(src="/public/images/screenshot.png", width="420", height="300")
+  section.content
+    div.frame
+      div.badge-container
+        a(href="http://itunes.apple.com/us/app/visits/id462227149?mt=12").badge
+          span Available on the Mac App Store
+      p.copy Visits is a Mac app that pulls in your Google Analytics data so you can see your site's traffic without lifting a finger.  It gives you hour by hour breakdown of your traffic as well as yesterday, this week and this month.  It also shows your most important metrics like top content, referrals and search keywords.
+      ul.screenshots.hl
+        li: a(href="")
+          img(src="/public/images/screenshot-thumb1.png", width="187", height="125")
+        li: a(href="")
+          img(src="/public/images/screenshot-thumb2.png", width="187", height="125")
+        li: a(href="")
+          img(src="/public/images/screenshot-thumb3.png", width="187", height="125")
+

@@ -1,0 +1,17 @@
+!!!5
+html
+  head
+    != masher.style("common")
+    block head
+  body
+    block body
+    section.footer
+      div.frame
+        ul.hl
+          li: a(href="http://twitter.com/getVisits") Twitter
+          li: a(href="https://groups.google.com/forum/?fromgroups#!forum/visits-for-mac") Support
+          li: a.last(href="") FAQs
+        div.copyright &copy; 2012 JGA
+    block scripts
+    if preview
+      script(src="/stalk.js")

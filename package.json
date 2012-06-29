@@ -1,0 +1,14 @@
+{
+  "name": "visits-site",
+  "private": true,
+  "version": "0.0.1",
+  "homepage": "https://github.com/jgallen23/visits-site",
+  "author": "Greg Allen <@jgaui> (http://jga.me)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jgallen23/visits-site.git"
+  },
+  "dependencies": {
+    "markx": "*"
+  }
+}
