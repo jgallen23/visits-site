@@ -1,66 +1,55 @@
-.header {
-  background-image: linear-gradient(top, #393939, #000000);
+#homepage {
+  .header {
 
-  height: 385px;
+    height: 385px;
 
-  .logo {
-    margin: 130px 20px 0 0;
-    float: left;
-  }
-  
-  img {
-    margin: 40px 0 0 0;
-  }
-}
-
-.content {
-  background: #4B5363;
-  border: 1px solid #818893;
-  border-width: 1px 0;
-
-  .badge-container {
-    width: 240px;
-    height: 100px;
-    float: left;
-    padding-top: 25px;
-  }
-  .badge {
-    margin-left: 25px;
-    width: 156px;
-    height: 47px;
-    display: block;
-    background: url(/ui/images/mac-store-badge.png);
-    background-size: 156px 47px;
-    span {
-      display: none;
+    .logo {
+      margin: 130px 20px 0 0;
+      float: left;
+    }
+    
+    img {
+      margin: 40px 0 0 0;
     }
   }
 
-  .copy {
-    margin: 30px 0;
-    text-shadow: 1px 1px 2px #000;
-  }
+  .content {
+    .badge-container {
+      width: 240px;
+      height: 100px;
+      float: left;
+      padding-top: 25px;
+    }
+    .badge {
+      margin-left: 25px;
+    }
 
-  .screenshots {
-    margin-bottom: 30px;
+    .copy {
+      margin: 30px 0;
+      text-shadow: 1px 1px 2px #000;
+    }
 
-    li {
-      margin: 0 0 0 32px;
-      a {
-        display: block;
-        padding: 8px;
-        background: #fff;
-        border: 1px solid #161616;
+    .screenshots {
+      margin-bottom: 30px;
 
-        &:hover {
-          position: relative;
-          top: -2px;
+      li {
+        margin: 0 0 0 32px;
+        a {
+          display: block;
+          padding: 8px;
+          background: #fff;
+          border: 1px solid #161616;
+
+          &:hover {
+            position: relative;
+            top: -2px;
+          }
         }
       }
-    }
-    li:first-child {
-      margin-left: 0;
+      li:first-child {
+        margin-left: 0;
+      }
     }
   }
+  @import "modal.styl"
 }
-@import "modal.styl"

@@ -4,13 +4,19 @@ html
     != masher.style("common")
     block head
   body
+    block header
+      section.header
+        div.frame
+          a(href="http://itunes.apple.com/us/app/visits/id462227149?mt=12").badge
+            span Available on the Mac App Store
+          a(href="/").logo Visits
     block body
     section.footer
       div.frame
         ul.hl
           li: a(href="http://twitter.com/getVisits") Twitter
           li: a(href="https://groups.google.com/forum/?fromgroups#!forum/visits-for-mac") Support
-          li: a.last(href="") FAQs
+          li: a.last(href="faq.html") FAQs
         div.copyright &copy; 2012 JGA
     block scripts
     if preview

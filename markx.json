@@ -8,11 +8,6 @@
         "styles": [
           "ui/common.styl"
         ]
-      },
-      "homepage": {
-        "styles": [
-          "ui/homepage.styl"
-        ]
       }
     },
     "plugins": {

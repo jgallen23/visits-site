@@ -1,0 +1,19 @@
+extends ../layouts/primary
+
+block body
+  section.content
+    div.frame
+      h1 FAQs
+      dl
+        dt What do I need to run Visits?
+        dd You need to have the Mac App Store app installed, be running OS X (10.6 at least) and have a Google Analytics account. 
+        dt How do you access my Google Analytics Data?
+        dd We use the Google Analytics API to access your data. To do that, you have to authorize our application to access your data. Authentication is handled by Google and you can revoke it 
+          a(href="https://www.google.com/accounts/") here
+          | &nbsp;at any time from your Google Account.
+        dt Do you store my Google Analytics password?
+        dd No. You don't have to provide any password. You only give Visits an authorization to access your Google Analytics data via the API. Then, we use 
+          a(href="http://code.google.com/apis/accounts/docs/OAuth2Login.html") Google OAuth
+          | &nbsp;for login to connect to your account. This can be revoked at any time 
+          a(href="https://www.google.com/accounts/") here
+          | &nbsp;from your Google Account.  We only store a secure token that is given by Google Analytics API when you completed the authorization process. This allows us to fetch data without having you to authorize each and every day.
