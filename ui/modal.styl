@@ -1,0 +1,52 @@
+.modal {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms ease-in;
+  &:target {
+    opacity: 1;
+    top: 0px;
+    pointer-events: auto;
+    img {
+      animation-duration: 0.5s;
+      animation-name: bounce;
+    }
+  }
+  img {
+    width: 800px;
+    margin: 30px auto;
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+    background: rgba(255,255,255,0.7);
+    animation-duration: .5s;
+    animation-name: minimize;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale3d(0.1,0.1,1);
+  }
+  75% {
+    transform: scale3d(1.08,1.08,1);
+  }
+  100% {
+    transform: scale3d(1,1,1);
+  }
+}
+
+@keyframes minimize {
+  0% {
+    transform: scale3d(1,1,1);
+  }
+  100% {
+    transform: scale3d(0.1,0.1,1);
+  }
+}

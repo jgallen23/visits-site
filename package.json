@@ -9,6 +9,8 @@
     "url": "https://github.com/jgallen23/visits-site.git"
   },
   "dependencies": {
-    "markx": "*"
+    "markx": "*",
+    "stylus": "*",
+    "nib": "*"
   }
 }

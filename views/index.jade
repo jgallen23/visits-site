@@ -7,7 +7,7 @@ block body
   section.header
     div.frame
       a(href="http://itunes.apple.com/us/app/visits/id462227149?mt=12").logo Visits
-      img(src="/public/images/screenshot.png", width="420", height="300")
+      img(src="/ui/images/screenshot.png", width="420", height="300")
   section.content
     div.frame
       div.badge-container
@@ -15,10 +15,16 @@ block body
           span Available on the Mac App Store
       p.copy Visits is a Mac app that pulls in your Google Analytics data so you can see your site's traffic without lifting a finger.  It gives you hour by hour breakdown of your traffic as well as yesterday, this week and this month.  It also shows your most important metrics like top content, referrals and search keywords.
       ul.screenshots.hl
-        li: a(href="")
-          img(src="/public/images/screenshot-thumb1.png", width="187", height="125")
-        li: a(href="")
-          img(src="/public/images/screenshot-thumb2.png", width="187", height="125")
-        li: a(href="")
-          img(src="/public/images/screenshot-thumb3.png", width="187", height="125")
+        li: a(href="#modal1")
+          img(src="/ui/images/screenshot-thumb1.png", width="187", height="125")
+        li: a(href="#modal2")
+          img(src="/ui/images/screenshot-thumb2.png", width="187", height="125")
+        li: a(href="#modal3")
+          img(src="/ui/images/screenshot-thumb3.png", width="187", height="125")
+  a.modal#modal1(href="#close")
+    img(src="/ui/images/screenshots/ss1.png", width="800")
+  a.modal#modal2(href="#close")
+    img(src="/ui/images/screenshots/ss2.png", width="800")
+  a.modal#modal3(href="#close")
+    img(src="/ui/images/screenshots/ss3.png", width="800")
 
