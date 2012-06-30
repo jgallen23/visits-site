@@ -1,12 +1,12 @@
 {
   "masher": {
     "assetPath": "",
-    "outputDir": "ui",
-    "publicPath": "dist/",
+    "outputDir": "ui/_compressed",
+    "publicPath": "",
     "groups": {
       "common": {
         "styles": [
-          "ui/common.styl"
+          "ui/stylesheets/common.styl"
         ]
       }
     },
