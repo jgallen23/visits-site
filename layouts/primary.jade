@@ -1,7 +1,9 @@
 !!!5
 html
   head
+    link(rel="shortcut icon", href="ui/images/favicon.ico")
     != masher.style("common")
+    block title
     block head
   body
     block header
@@ -16,8 +18,19 @@ html
         ul.hl
           li: a(href="http://twitter.com/getVisits") Twitter
           li: a(href="https://groups.google.com/forum/?fromgroups#!forum/visits-for-mac") Support
-          li: a.last(href="faq.html") FAQs
+          li: a(href="faq.html") FAQs
+          li: a.last(href="contact.html") Contact
         div.copyright &copy; 2012 JGA
     block scripts
     if preview
       script(src="/stalk.js")
+    script
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-25303780-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
