@@ -11,6 +11,6 @@
   "dependencies": {
     "markx": "*",
     "stylus": "*",
-    "nib": "*"
+    "nib": ">=1.1.2"
   }
 }
